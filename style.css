@@ -1,0 +1,49 @@
+#power-generator button {
+  padding: 10px 20px;
+  background-color: #c0392b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#power-generator button:hover {
+  background-color: #a93226;
+}
+
+#power-description {
+  font-size: 1.3em;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.rarity-flash {
+  animation: glow 1.5s ease-in-out;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px white; }
+  50% { text-shadow: 0 0 15px white; }
+  100% { text-shadow: 0 0 5px white; }
+}
+
+.mythic-spin {
+  animation: spin-glow 2s infinite;
+}
+
+@keyframes spin-glow {
+  0% {
+    transform: rotate(0deg) scale(1);
+    filter: drop-shadow(0 0 5px gold);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    filter: drop-shadow(0 0 20px gold);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    filter: drop-shadow(0 0 5px gold);
+  }
+}
